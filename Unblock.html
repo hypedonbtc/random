@@ -1,0 +1,12 @@
+<script>
+function unblockWebsite(url) {
+  // Use a proxy server to access the blocked website
+  var proxy = "http://your-proxy-server-address:proxy-port";
+  var unblockedUrl = proxy + "/" + url;
+  // Redirect the browser to the unblocked website
+  window.location.replace(unblockedUrl);
+}
+</script>
+
+<!-- Use the unblockWebsite function to unblock a website -->
+<button onclick="unblockWebsite('https://www.blocked-website.com')">Unblock Website</button>
